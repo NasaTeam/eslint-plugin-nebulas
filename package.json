@@ -1,0 +1,33 @@
+{
+  "name": "eslint-plugin-nebulas",
+  "version": "0.0.0",
+  "description": "smart contract lint rules",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "nebulas",
+    "smart contract"
+  ],
+  "author": "newraina",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive"
+  },
+  "dependencies": {
+    "babel-eslint": "^8.2.6",
+    "requireindex": "~1.1.0"
+  },
+  "devDependencies": {
+    "eslint": "~5.2.0",
+    "mocha": "^3.1.2",
+    "prettier": "^1.13.7"
+  },
+  "peerDependencies": {
+    "eslint": "^4.1.1"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "ISC"
+}
