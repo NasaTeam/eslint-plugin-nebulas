@@ -61,6 +61,14 @@ ruleTester.run('export-contract', rule, {
 
   invalid: [
     {
+      code: `module.exports = 1`,
+      errors: [
+        {
+          messageId: 'prototypeOrClass'
+        }
+      ]
+    },
+    {
       code: `
         const s = 1
         module.exports = s`,
