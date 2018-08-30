@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nebulas",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "smart contract lint rules",
   "keywords": [
     "eslint",
