@@ -56,6 +56,14 @@ ruleTester.run('export-contract', rule, {
         function Contract() {}
         Contract.prototype = o
         module.exports = Contract`
+    },
+    {
+      code: `
+        const o = {}
+        o.init = () => {}
+        const Contract = function(){}
+        Contract.prototype = o
+        module.exports = Contract`
     }
   ],
 
