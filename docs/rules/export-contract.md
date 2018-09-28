@@ -1,6 +1,6 @@
 # Ensure an export is a smart contract object. (nebulas/export-contract)
 
-Ensure an export is a smart contract object (a construct function or class which has a 'init' method).
+Ensure an export is a smart contract object (a constructor function or class which includes a 'init' method).
 
 ## Rule Details
 
