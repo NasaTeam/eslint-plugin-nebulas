@@ -98,6 +98,25 @@ ruleTester.run('export-contract', rule, {
     },
     {
       code: `
+        module.exports = {}`,
+      errors: [
+        {
+          messageId: 'prototypeOrClass'
+        }
+      ]
+    },
+    {
+      code: `
+        const s = {}
+        module.exports = s`,
+      errors: [
+        {
+          messageId: 'prototypeOrClass'
+        }
+      ]
+    },
+    {
+      code: `
         function Contract(){}
         module.exports = Contract
       `,
