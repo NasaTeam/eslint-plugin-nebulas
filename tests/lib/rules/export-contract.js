@@ -118,6 +118,31 @@ ruleTester.run('export-contract', rule, {
           messageId: 'needInit'
         }
       ]
+    },
+    {
+      code: `
+        function Contract(){}
+        Contract.prototype = { init1: function(){} }
+        module.exports = Contract
+      `,
+      errors: [
+        {
+          messageId: 'needInit'
+        }
+      ]
+    },
+    {
+      code: `
+        function Contract(){}
+        const o = { init1: function(){} }
+        Contract.prototype = o
+        module.exports = Contract
+      `,
+      errors: [
+        {
+          messageId: 'needInit'
+        }
+      ]
     }
   ]
 })
